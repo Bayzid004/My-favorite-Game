@@ -6,33 +6,91 @@
     <title>My Favorite Game</title>
 
     <link rel="stylesheet" href="style/blog.css">
+
     <style>
-        
+        #Internalh{
+            font-size: 300%;
+            color: blue;
+        }
+        #nameh{
+            font-size: 150%;
+            color: crimson;
+        }
+        .History{
+            text-align: justify;
+            background-color: rgb(141, 243, 7);
+            margin: 5px;
+        }
+        .History #idp1{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            border: 5px solid salmon;
+            border-radius: 5px;
+        }
+        .History #idp2{
+            padding: 10px;
+            border: 5px solid salmon;
+            border-radius: 5px;
+        }
+        .History #idp3{
+            padding: 10px;
+            border: 5px solid salmon;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+    <h1 style="text-align: center; color: red; font-weight: 900; font-size: 56px;">Play with HTML</h1>
     <div>
-        <h3 style="text-align: center; color: red; font-weight: 900; font-size: 56px;">Play with HTML</h3>
+        <h2 style="font-size: 300%; color: blue;">Inline CSS</h2>
         <h5>What is <Strong>HTML</Strong>?</h5>
         <p>Hypertext Markup Language, or <Strong>HTML</Strong>, is a programming language used to describe the structure of web pages.<br> <strong>HTML</strong> makes it possible to create static pages with <u><b>text, headings, tables, lists, images, links, and so on</b></u>.</p>
         <p>
-            <h1>Bayzid</h1>
+            <h1 style="font-size: 200%;">Bayzid</h1>
             <h2>Bayzid</h2>
             <hr>
             <h3>Bayzid</h3>
             <h4>Bayzid</h4>
             <h5>Bayzid</h5>
             <h6>Bayzid</h6>
-            <p>paragraph</p>
+            <p style="font-size: 36px; color: rgb(236, 40, 14);">paragraph</p>
+            <hr>
             <img src="images/html.jpg" alt="HTML" width="100px"><br>
             <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools HTML</a>
             <button>Click</button>
         </p>
-        <pre>
-            1.My name is Bayzid.
-            2.I am student.
-            3.Now i'm trying to learn about html.
+        <pre style="color: rgb(12, 196, 171);">
+            1.My name is <cite>Bayzid</cite>.
+            2.I am <bdo dir="rtl">student</bdo>.
+            3.Now i'm trying to learn about <abbr title="Hypertext Markup language">html</abbr>.
         </pre>
-    </div> 
+    </div>
+    <div>
+        <h2 id="Internalh">
+            Internal CSS
+        </h2>
+        <h5 id="nameh">About HTML History.</h5>
+        <div class="History">
+            <p id="idp1">
+                Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN. In his personal notes of 1990, Berners-Lee listed "some of the many areas in which hypertext is used"; an encyclopedia is the first entry.The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991.It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by SGMLguid, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of these elements still exist in HTML 4.
+            </p>
+            <p id="idp2">
+                HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges with attributes) rather than merely print effects, with separate structure and markup. HTML has been progressively moved in this direction with CSS.
+            </p>
+            <p id="idp3">
+                Berners-Lee considered HTML to be an application of SGML. It was formally defined as such by the Internet Engineering Task Force (IETF) with the mid-1993 publication of the first proposal for an HTML specification, the "Hypertext Markup Language (HTML)" Internet Draft by Berners-Lee and Dan Connolly, which included an SGML Document type definition to define the syntax.The draft expired after six months, but was notable for its acknowledgment of the NCSA Mosaic browser's custom tag for embedding in-line images, reflecting the IETF's philosophy of basing standards on successful prototypes. Similarly, Dave Raggett's competing Internet Draft, "HTML+ (Hypertext Markup Format)", from late 1993, suggested standardizing already-implemented features like tables and fill-out forms.
+            </p>
+        </div><br>
+    </div>
+    <div style="position:relative;">
+        <div style="opacity:0.5;position:absolute;left:50px;top:-30px;width:300px;height:150px;background-color:#40B3DF"></div>
+        <div style="opacity:0.3;position:absolute;left:120px;top:20px;width:100px;height:170px;background-color:#73AD21"></div>
+        <div style="margin-top:30px;width:360px;height:130px;padding:20px;border-radius:10px;border:10px solid #EE872A;font-size:120%;">
+          <h1>CSS = Styles and Colors</h1>
+          <div style="letter-spacing:12px;font-size:15px;position:relative;left:25px;top:25px;">Manipulate Text</div>
+          <div style="color:#40B3DF;letter-spacing:10px;font-size:15px;position:relative;left:25px;top:30px;">Colors,
+          <span style="background-color:#B4009E;color:#ffffff;"> Boxes</span></div>
+        </div>
+      </div>
 </body>
 </html>
